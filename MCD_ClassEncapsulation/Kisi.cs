@@ -59,5 +59,27 @@ namespace MCD_ClassEncapsulation
         }
         public DateTime DogumTarihi { get; set; }
 
+        private string _telefonNumarasi;
+        public string TelefonNumarasi
+        {
+            get
+            {
+                return _telefonNumarasi.Substring(0, 3) + " " + _telefonNumarasi.Substring(3, 3) + " " + _telefonNumarasi.Substring(6, 2) + " " + _telefonNumarasi.Substring(8, 2);
+            }
+            set
+            {
+                char[] dizi = value.ToCharArray();
+                bool hepsiRakamMi = true;
+                foreach (char item in dizi)
+                {
+                    if (char.IsNumber (item)==false)
+                    {
+                        hepsiRakamMi = false;
+                        break;
+                    }
+                }
+            }
+        }
+
     }
 }
