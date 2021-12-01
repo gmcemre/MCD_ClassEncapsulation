@@ -19,12 +19,14 @@ namespace MCD_ClassEncapsulation
                 ft.DogumTarihi = new DateTime(1993, 10, 22);
                 ft.Soyadi = "gemici";
                 ft.Yas = 28;
+                ft.TelefonNumarasi  = "0123456789";
 
-                 Console.WriteLine(ft.Adi );
-                 Console.WriteLine(ft.DenemeTelNo  );
-                 Console.WriteLine(ft.DogumTarihi  );
-                 Console.WriteLine(ft.Soyadi  );
-                 Console.WriteLine(ft.Yas  );
+                 Console.WriteLine(ft.Adi);
+                 Console.WriteLine(ft.DenemeTelNo);
+                 Console.WriteLine(ft.DogumTarihi);
+                 Console.WriteLine(ft.Soyadi);
+                 Console.WriteLine(ft.Yas);
+                 Console.WriteLine(ft.TelefonNumarasi);
             }
             catch (Exception ex)
             {
